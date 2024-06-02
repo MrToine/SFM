@@ -1,0 +1,24 @@
+app/
+├── config/
+│   ├── database.php
+│   └── routes.php
+├── lib/
+│   ├── Autoloader.php
+│   ├── Router.php
+│   ├── Response.php
+│   └── TemplateEngine.php
+├── public/
+│   ├── css/
+│   │   └── style.css
+│   ├── js/
+│   │   └── script.js
+│   └── index.php
+├── src/
+│   ├── Controller/
+│   │   └── HomeController.php
+│   ├── Model/
+│   │   └── User.php
+│   └── View/
+│       └── home.php
+└── vendor/
+    └── composer/autoload_classmap.php

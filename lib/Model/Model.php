@@ -34,7 +34,7 @@ abstract class Model extends BaseModel {
      * @param array $attributes Les attributs à remplir.
      * @return void
      */
-    public function fill(array $attributes) {
+    public function fill($attributes) {
         foreach ($attributes as $key => $value) {
             $this->attributes[$key] = $value;
         }
@@ -43,15 +43,17 @@ abstract class Model extends BaseModel {
     /**
      * Récupère tous les objets du modèle.
      *
-     * @return array Les objets du modèle.
+     * @return object Les objets du modèle.
      */
     public function all() {
         $data = $this->loadData();
         $objects = [];
         foreach ($data as $id => $attributes) {
-            $objects = new static($attributes);
+            $object = new static(); 
+            $object->fill($attributes);
+            $objects[] = $object;
         }
-
+    
         return $objects;
     }
 
@@ -147,6 +149,10 @@ abstract class Model extends BaseModel {
             return true;
         }
         return false;
+    }
+
+    public function getTable() {
+        return $this->table;
     }
 
     /**

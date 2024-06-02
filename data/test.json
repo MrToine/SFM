@@ -1,4 +1,12 @@
 {
-    "name": "Je suis un test de db json",
-    "content": "Je suis le contenu du test pour le coup :)"
+    "1": {
+        "id": 1,
+        "name": "John Doe",
+        "content": "Sample content"
+    },
+    "2": {
+        "id": 2,
+        "name": "Je suis un test de db json 3",
+        "content": "Je suis le contenu du test pour le coup :)"
+    }
 }

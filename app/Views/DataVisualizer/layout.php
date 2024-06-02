@@ -3,11 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SFM : a Simple Framework</title>
+    <title>DataVisualizer</title>
+    <link rel="stylesheet" href="../app/Views/DataVisualizer/css/style.css">
 </head>
 <body>
-    <main>
-        <?php $output; ?>
-    </main>
+    <?= $output; ?>
 </body>
 </html>

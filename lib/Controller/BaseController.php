@@ -34,6 +34,7 @@ abstract class BaseController {
         }
 
         ob_start();
+
         require dirname(__DIR__, 2) . '/app/views/' . $template;
         $output = ob_get_clean();
 

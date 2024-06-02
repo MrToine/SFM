@@ -14,5 +14,15 @@ const ROUTES = [
     '/delete' => [
         'controller' => App\Controllers\HomeController::class,
         'method' => 'delete'
+    ],
+    '/test' => [
+        'controller' => App\Controllers\HomeController::class,
+        'method' => 'test'
+    ],
+
+    //DataVisualizer
+    '/DataVisualizer' => [
+        'controller' => App\Controllers\DataVisualizerController::class,
+        'method' => 'index'
     ]
 ];

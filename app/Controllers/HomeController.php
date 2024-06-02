@@ -8,13 +8,9 @@ class HomeController extends BaseController {
 
     public function index(){
         $test = new Test();
-        $last = $test->last();
-        $data = [
-            'id' => $last->id + 1,
-            'name' => 'John Doe',
-            'content' => 'Sample content'
-        ];
+        $lol = $test->all();
         //$test->insert($data);
+        var_dump($lol);
 
         $data = [
             'variable_test' => 'Je suis une variable',
@@ -48,6 +44,8 @@ class HomeController extends BaseController {
     }
 
     public function test() {
-        return $this->redirect_to_route('home', $data);
+        $model = new Test();
+        $myPlugin = new \Plugins\DataVisualizer($model->getTable());
+        var_dump($myPlugin->process());
     }
 }

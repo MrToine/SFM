@@ -1,0 +1,43 @@
+html {
+    font-family: Arial;
+    font-size: 18px;
+}
+
+body {
+    background-color: rgb(54, 54, 53);
+    color: #fff;
+}
+
+.navigation {
+    margin: 10px 10px 10px 10px;
+    padding: 10px;
+}
+
+.navigation > ul {
+    list-style: none;
+}
+
+.navigation > ul > li {
+    display: inline-block;
+    min-width: 100px;
+    border-bottom: 2px solid #0ecce6;
+    text-align: center;
+}
+
+.navigation > ul > li.active {
+    border-color: #e6390e;
+    border-bottom:none;
+    border-top: 2px solid;
+}
+
+.navigation > ul > li:hover {
+    border-top: 2px solid #0ecce6;
+    border-bottom:none;
+}
+
+.item-link {
+    display: block;
+    width: 100%;
+    color: #fff;
+    text-decoration: none;
+}

@@ -5,5 +5,5 @@ namespace App\Models;
 use SFM\Model\Model;
 
 class Test extends Model {
-    protected $table = "boucle";
+    protected $table = "test";
 }

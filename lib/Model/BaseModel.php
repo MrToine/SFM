@@ -27,7 +27,15 @@ abstract class BaseModel {
      */
     protected function loadData() {
         $jsonData = file_get_contents($this->dataFilePath);
-        return $this->convertToObject(json_decode($jsonData, true));
+        $decodedData = json_decode($jsonData, true);
+    
+        // Assurez-vous que les données sont sous forme d'un tableau ou d'un objet
+        if (is_array($decodedData) || is_object($decodedData)) {
+            return $decodedData;
+        } else {
+            // Si les données ne sont ni un tableau ni un objet, retournez une valeur par défaut (par exemple, un tableau vide)
+            return [];
+        }
     }
 
     /**

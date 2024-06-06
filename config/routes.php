@@ -21,8 +21,12 @@ const ROUTES = [
     ],
 
     //DataVisualizer
-    '/DataVisualizer' => [
+    '/DataVisualizer/add' => [
+        'controller' => App\Controllers\DataVisualizerController::class,
+        'method' => 'add'
+    ],
+    '/DataVisualizer/{table}' => [
         'controller' => App\Controllers\DataVisualizerController::class,
         'method' => 'index'
-    ]
+    ],
 ];

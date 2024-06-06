@@ -8,22 +8,27 @@ class DataVisualizerController extends BaseController {
 
     public $layout = "DataVisualizer/layout";
 
-    public function index(){
-        
+    public function index($table){
+        $data['table_name'] = $table;
+        $table = ucfirst($table);
         $files = scandir(dirname(__DIR__, 2).'/data/');
 
         foreach($files as $file) {
             if($file !== '.htaccess' && $file !== '.' && $file !== '..') {
                 $file = trim($file, '.json');
-                $classname = ucfirst($file);
-                $fileClass = "App\\Models\\$classname";
+                $fileClass = "App\\Models\\$table";
                 if(class_exists($fileClass)){
                     $model = new $fileClass();
-                    $data[$file] = $model->all();
+                    $data['table'][$file] = $model->all();
                 }
             }
         }
 
         return $this->render('DataVisualizer/index.php', $data);
+    }
+
+    public function add() {
+
+        return $this->render('DataVisualizer/add.php');
     }
 }

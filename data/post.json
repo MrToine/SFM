@@ -1,0 +1,17 @@
+{
+    "1": {
+        "id": 1,
+        "name": "article 1",
+        "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident omnis aliquid sequi sapiente praesentium voluptatibus, explicabo aspernatur dolores error dolorem molestias, tempore libero doloremque, quaerat ullam. Cumque consequuntur atque voluptas?"
+    },
+    "2": {
+        "id": 2,
+        "name": "Article 2",
+        "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident omnis aliquid sequi sapiente praesentium voluptatibus, explicabo aspernatur dolores error dolorem molestias, tempore libero doloremque, quaerat ullam. Cumque consequuntur atque voluptas?"
+    },
+    "3": {
+        "id": 3,
+        "name": "article 3",
+        "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident omnis aliquid sequi sapiente praesentium voluptatibus, explicabo aspernatur dolores error dolorem molestias, tempore libero doloremque, quaerat ullam. Cumque consequuntur atque voluptas?"
+    }
+}

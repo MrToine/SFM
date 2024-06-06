@@ -8,5 +8,10 @@
         "id": 2,
         "name": "Je suis un test de db json 3",
         "content": "Je suis le contenu du test pour le coup :)"
+    },
+    "3": {
+        "id": 3,
+        "name": "Je ne suis pas un titre",
+        "content": "Je ne suis qu'un contenu !"
     }
 }

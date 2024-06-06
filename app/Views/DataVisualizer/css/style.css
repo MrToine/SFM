@@ -8,6 +8,11 @@ body {
     color: #fff;
 }
 
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
 .navigation {
     margin: 10px 10px 10px 10px;
     padding: 10px;
@@ -19,8 +24,6 @@ body {
 
 .navigation > ul > li {
     display: inline-block;
-    min-width: 100px;
-    border-bottom: 2px solid #0ecce6;
     text-align: center;
 }
 
@@ -31,13 +34,73 @@ body {
 }
 
 .navigation > ul > li:hover {
-    border-top: 2px solid #0ecce6;
-    border-bottom:none;
 }
 
 .item-link {
+    min-width: 100px;
     display: block;
-    width: 100%;
     color: #fff;
     text-decoration: none;
+    border-bottom: 2px solid #0ecce6;
+}
+
+.active {
+    border-top: 2px solid #0ecce6;
+    border-bottom: none;
+}
+
+.item-link:hover {
+    border-bottom:none;
+    border-top: 2px solid #0ecce6;
+}
+
+.item-link-add {
+    display: block;
+    color: #7ddb91;
+    padding: 0 5px 0 5px;
+    background-color: #399e4f;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+
+.item-link-add:hover {
+    background-color: rgba(57, 158, 79, 0.7);
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table, .tr, .td {
+    border: 1px solid #fff;
+}
+
+.th {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.td {
+    padding: 10px;
+}
+
+.btn {
+    display: block;
+    max-width: 200px;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid;
+    border-radius: 2px;
+    margin: 10px 0 10px 0;
+}
+
+.btn-create {
+    background-color: #0ee693ad;
+    border-color: #177953ad;
+}
+
+.btn-create:hover {
+    background-color: #1ec082ad;
+    border-color: #177953ad;
 }
